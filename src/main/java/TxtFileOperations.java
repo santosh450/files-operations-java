@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class TxtFileOperations {
 
-    InputStream inputStream;
+    InputStream inputStream=null;
     BufferedReader bufferedReader=null;
     BufferedReader intialize (String inputFile) {
         try {
