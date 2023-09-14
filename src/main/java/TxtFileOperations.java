@@ -11,11 +11,12 @@ public class TxtFileOperations {
         try {
             System.out.println("1---------");
             inputStream = getClass().getResourceAsStream(inputFile);
-            System.out.println("2---------");
+            System.out.println("2---------"+inputStream.toString());
             bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             System.out.println("3---------");
             return bufferedReader;
         }catch(Exception e) {
+            System.out.println("4---------"+e.getMessage());
                 throw new RuntimeException(e.getMessage());
             }
     }
