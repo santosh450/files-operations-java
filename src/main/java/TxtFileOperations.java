@@ -9,8 +9,11 @@ public class TxtFileOperations {
     BufferedReader bufferedReader=null;
     BufferedReader intialize (String inputFile) {
         try {
+            System.out.println("1---------");
             inputStream = getClass().getResourceAsStream(inputFile);
+            System.out.println("2---------");
             bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+            System.out.println("3---------");
             return bufferedReader;
         }catch(Exception e) {
                 throw new RuntimeException(e.getMessage());
